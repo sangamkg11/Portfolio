@@ -1,0 +1,107 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #1f242d;
+            color: #fff;
+
+        }
+
+        footer {
+            height: 80px;
+            width: 100%;
+            background-color: #232831;
+            color: #fff;
+            text-align: center;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navb {
+            font-size: 45px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            padding: 60px 9% 0;
+            color: #fff;
+            gap: 50px;
+            /* visibility: hidden; */
+            /* opacity: 0; */
+            animation: show-content 1.5s linear forwards;
+            animation-delay: 1.6s;
+        }
+
+        .hone_info h1 {
+            font-size: 55px;
+
+        }
+
+        .hone_info h2 {
+            display: inline-block;
+            font-size: 32px;
+            margin-top: -10px;
+        }
+
+
+        .hone_info h2 span {
+            position: relative;
+            display: inline-block;
+            color: transparent;
+            -webkit-text-stroke: 0.7px rgb(94, 174, 94);
+            animation: display-text 16s linear infinite;
+            animation-delay: calc(-4s *var(--i));
+        }
+
+        @keyframes display-text {
+
+            25%,
+            100% {
+                display: none;
+            }
+        }
+
+        .hone_info h2 span::before {
+            content: attr(data-text);
+            position: absolute;
+            width: 0;
+            border-right: 2px solid rgb(94, 174, 94);
+            color: rgb(94, 174, 94);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: fill-text 4s linear infinite;
+
+        }
+
+        @keyframes fill-text {
+
+            10%,
+            100% {
+                width: 0;
+            }
+
+            70%,
+            90% {
+                width: 100%;
+            }
+        }
+
+        .hone_info p {
+            font-size: 16px;
+            margin: 10px 0 25px;
+        }

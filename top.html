@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 14px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      display: none;
+      cursor: pointer;
+    }
+#topBtn:hover {
+      background-color: #222;
+    }
+    </style>
+</head>
+<body>
+    <button id="topBtn">↑ Top</button>
+</body>
+<script>
+    // Greeting on load
+    window.onload = function () {
+      alert("Welcome to the site, Sangam!");
+    };
+
+    // Clock function
+    // function updateClock() {
+    //   const clock = document.getElementById("clock");
+    //   const now = new Date();
+    //   clock.textContent = "Current time: " + now.toLocaleTimeString();
+    // }
+    // setInterval(updateClock, 1000);
+    // updateClock();
+
+    // Back to top button
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    topBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</html>

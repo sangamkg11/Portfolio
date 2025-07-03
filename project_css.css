@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #020c1e;
+    color: #fff;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #020c1e;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navb {
+    font-size: 45px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.project_list {
+    position: relative;
+    height: 1100px;
+    width: 100%;
+    border: 2px solid red;
+    /* padding-top: 200px; */
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project_list .project {
+    height: 45%;
+    width: 30%;
+    background: #eb6161;
+    border: 2px solid rgb(11, 121, 223);
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(236, 186, 21);
+    display: inline-block;
+    margin: 25px 5px 25px 5px;
+}
+
+.project_list .project .img_div {
+    background-image: url("444.jpg");
+    height: 150px;
+    width: 400px;
+    border: 2px solid black;
+    margin-top: 15px;
+    margin-left: 20px;
+    border-radius: 45px;
+    margin-right: 15px;
+    object-fit: cover;
+    display: block;
+
+
+}
+
+.img_div img {
+    width: 400px;
+    height: 150px;
+    /* or 'contain' if you don't want cropping */
+    border-radius: 45px;
+
+}
+
+/* .project_list .project .img_div img {
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    display: block;
+    width: 85%;
+    object-fit: cover;
+
+
+} */
+
+
+.btn-sci a {
+    display: inline-block;
+    border: 2px solid rgb(49, 214, 49);
+    font-weight: 600;
+    font-size: 20px;
+    background: rgb(116, 221, 116);
+    color: #020c1e;
+    padding: 12px 24px;
+    margin-left: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(153, 230, 153);
+    font-size: 16px;
+    text-align: center;
+    transition: 0.5s;
+
+
+}
+
+.btn-sci a:hover {
+    background: #020c1e;
+    ;
+    color: rgb(124, 231, 124);
+    box-shadow: none;
+
+}

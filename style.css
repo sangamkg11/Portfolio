@@ -12,6 +12,14 @@
 
 } */
 
+footer{
+    height: 80px;
+    width: 100%;
+    background-color: #232831;
+    color: #fff;
+    text-align: center;
+}
+
 a{
     color: #fff;
     text-decoration: none;
@@ -267,3 +275,5 @@ a{
         transform: translateY(0%);
     }
 }
+
+
