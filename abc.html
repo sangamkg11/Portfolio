@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 25px 9%;
+        /* background: rgb(123, 108, 216); */
+        /* background-color: #282c34; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        visibility: hidden;
+        opacity: 0;
+        animation: show-content 1.5s linear forwards;
+        animation-delay: 1.2s;
+
+    }
+
+    @keyframes show-content {
+        100% {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .navbar .logo {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        margin-left: 35px;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+        font-weight: 500;
+        transition: 0.5s;
+    }
+
+    .navbar ul li:hover a,
+    .navbar ul li.active a {
+        color: rgb(134, 219, 134);
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"> Welcome! to my portfolio </a>
+        <ul>
+            <li class="active"><a href="#">Home</a> </li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
